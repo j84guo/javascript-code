@@ -1,0 +1,15 @@
+Concurrency Model :
+
+Although Node.js is a single-threaded application, it supports concurrency by way of events and callbacks, e.g. every function in the standard API is asynchronous.
+The main thread runs in an event loop and dispatches tasks. On completion of a task, an event is created which triggers a callback. 
+
+
+Observer Pattern :
+
+A subject object maintains a list of its dependent objects, and invokes their methods when certain events occur. 
+
+
+Event Driven Programming : 
+
+As soon as a Node application starts, it simply initializes variables, declares functions, then waits for events to occur. A main loop listens for events and triggers callbacks when
+the appropriate event occurs. 

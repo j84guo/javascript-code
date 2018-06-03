@@ -1,0 +1,12 @@
+var fs = require("fs");
+
+console.log("starting asyncronous file read...")
+
+// in Node, any aynchronous function accepts a callback as its last argument 
+// any callback accepts an error object as its first argument 
+fs.readFile("data", function(err, data){
+	if(err) return console.error(err);
+	console.log(data.toString());
+});
+
+console.log("...program ended")
